@@ -1,0 +1,51 @@
+.api-check {
+  width: 100%;
+  padding-bottom: 120px;
+}
+
+.api-check .api-list .api-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #37303F;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+}
+
+.api-check .api-list .api-textfiled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.api-check .api-group {
+  position: relative;
+  padding: 24px 20px;
+  border: 1px solid #DAE0EF;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.api-check .api-group .btn-more {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
+
+.api-check .api-group .api-label {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.api-check .api-group .delete {
+  width: 140px;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: -130px;
+}

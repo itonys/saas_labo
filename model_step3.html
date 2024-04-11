@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- common css -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/set.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/container.css" />
+  <link rel="stylesheet" href="css/table.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- page css-->
+  <link rel="stylesheet" href="css/model.css" />
+  <link rel="stylesheet" href="css/file.css" />
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/api.css" />
+  <link rel="stylesheet" href="css/mypage.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1>
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="" /></a>
+      </h1>
+      <nav>
+        <ul class="nav">
+          <li class="active"><a href="list.html">AI管理</a></li>
+          <li><a href="file.html">ファイル</a></li>
+          <li><a href="demo_empty.html">デモ</a></li>
+          <li><a href="api.html">API</a></li>
+          <li><a href="report.html">レポート</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="profile">
+        <div class="profile-icon">
+          <p class="profile-icon__alphabet">t</p>
+        </div>
+        <div class="profile-id">
+          <p class="profile-id__name">Tony Jung</p>
+          <div class="profile-id__icon">
+            <i class="icon-down">
+              <img src="./img/chevron-down.svg" alt="" />
+            </i>
+          </div>
+        </div>
+      </div>
+      <!--  profile pulldown : display:none -->
+      <div class="acount">
+        <ul class="pulldown">
+          <li class="pulldown-list" onclick="location.href='./mypage.html'">
+            <span class="pulldown-text">アカウント</span>
+          </li>
+          <li class="pulldown-list" onclick="location.href='./price.html'">
+            <span class="pulldown-text">料金</span>
+          </li>
+          <li class="pulldown-list" onclick="location.href='./history.html'">
+            <span class="pulldown-text">購入履歴</span>
+          </li>
+          <li class="pulldown-line"></li>
+          <li class="pulldown-list" onclick="location.href='./login.html'">
+            <span class="pulldown-text">ロウアウト</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="container-warpper">
+
+      <div class="container-header">
+        <div class="title-area">
+          <i class="title-icon">
+            <img src="./img/ai.svg" alt="" />
+          </i>
+          <h1 class="title">モデルの作成</h1>
+        </div>
+      </div>
+
+      <div class="step-warpper">
+        <div class="step-menu">
+          <div class="steps">
+            <div class="step">
+              <a href="model_step1.html"></a>
+              <i class="step1"></i>
+              <span>モデル選択</span>
+            </div>
+            <div class="step">
+              <a href="model_step2.html"></a>
+              <i class="step2"></i>
+              <span>学習ナレッジ</span>
+            </div>
+            <div class="step active">
+              <a href="model_step3.html"></a>
+              <i class="step3"></i>
+              <span>学習</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="model-warpper">
+
+        <div class="model-section">
+          <h2 class="sub-title">コスト情報</h2>
+
+          <table class="price-table">
+            <thead>
+              <tr class="tr-title__price">
+                <th class="th-category">項目</th>
+                <th class="th-cost">コスト（円）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tr-cost">
+                <td class="td-category">GPT3(davinci)（リクエストコスト）</td>
+                <td class="td-cost">3円/Token</td>
+              </tr>
+              <tr class="tr-cost">
+                <td class="td-category">学習コスト</td>
+                <td class="td-cost">●●チケット</td>
+              </tr>
+              <tr class="tr-cost">
+                <td class="td-category">レンタルサービス</td>
+                <td class="td-cost">●●チケット</td>
+              </tr>
+              <tr class="tr-cost">
+                <td class="td-category">消費税（10%）</td>
+                <td class="td-cost">●●チケット</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="totals">
+            <div class="about">
+              料金について
+              <a href="https://karakuri.ai/contact/" target="_blank">お問い合わせ</a>
+            </div>
+            <div class="total">
+              <div class="helper">
+                <img src="./img/help.svg" alt="" />
+                <span class="helper-tooltip">サービス学習によって多少予想トータル金額は変わります。</span>
+              </div>
+              予想額（月間）：<span class="price">●●チケット</span>
+              <p class="vat">VAT（10%） 含む</p>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="btn-bottom">
+            <div class="static">
+              <button class="btn-outline basic-btn" onclick="location.href='./model_step2.html'">前へ</button>
+              <button class="btn-primary basic-btn" onclick="location.href='./detail.html'">学習</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/profile_pulldown.js"></script>
+</body>
+
+</html>

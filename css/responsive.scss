@@ -1,0 +1,90 @@
+@media screen and (max-width:1366px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header {
+    padding: 0px 20px !important;
+
+    .header-left {
+      .logo {
+        width: 90% !important;
+      }
+
+      .nav {
+        font-size: 1.4rem !important;
+        gap: 0 12px !important;
+        margin-left: -40px;
+
+        li {
+          padding: 2px 4px !important;
+        }
+      }
+    }
+
+    .header-right {
+      .profile {
+        &-id {
+          &__name {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .sign-layout {
+    display: flex !important;
+
+    .sign-left {
+      display: none !important;
+    }
+  }
+
+  .model-detail {
+    .details {
+      flex-direction: column !important;
+      justify-content: center;
+      gap: 0;
+
+      .detail-info {
+        max-width: 100% !important;
+      }
+
+      .detail-check {
+        max-width: 100% !important;
+      }
+
+      .detail-deploy {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .step-menu {
+    padding-right: 0;
+  }
+
+  .ghost-input {
+    max-width: 100% !important;
+  }
+
+  .api-group {
+    .delete {
+      position: revert !important;
+    }
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .container {
+    padding: 0 20px;
+  }
+}

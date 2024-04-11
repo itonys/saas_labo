@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/set.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/container.css" />
+  <link rel="stylesheet" href="css/table.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- page css-->
+  <link rel="stylesheet" href="css/model.css" />
+  <link rel="stylesheet" href="css/file.css" />
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/api.css" />
+  <link rel="stylesheet" href="css/mypage.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1>
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="" /></a>
+      </h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="list.html">AI管理</a></li>
+          <li class="active"><a href="file.html">ファイル</a></li>
+          <li><a href="demo_empty.html">デモ</a></li>
+          <li><a href="api.html">API</a></li>
+          <li><a href="report.html">レポート</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="profile">
+        <div class="profile-icon">
+          <p class="profile-icon__alphabet">t</p>
+        </div>
+        <div class="profile-id">
+          <p class="profile-id__name">Tony Jung</p>
+          <div class="profile-id__icon">
+            <i class="icon-down">
+              <img src="./img/chevron-down.svg" alt="" />
+            </i>
+          </div>
+        </div>
+      </div>
+      <!--  profile pulldown : display:none -->
+      <div class="acount">
+        <ul class="pulldown">
+          <li class="pulldown-list" onclick="location.href='./mypage.html'">
+            <span class="pulldown-text">アカウント</span>
+          </li>
+          <li class="pulldown-list" onclick="location.href='./price.html'">
+            <span class="pulldown-text">料金</span>
+          </li>
+          <li class="pulldown-list" onclick="location.href='./history.html'">
+            <span class="pulldown-text">購入履歴</span>
+          </li>
+          <li class="pulldown-line"></li>
+          <li class="pulldown-list" onclick="location.href='./login.html'">
+            <span class="pulldown-text">ロウアウト</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="container-warpper">
+
+      <div class="container-header">
+        <div class="title-area">
+          <i class="title-icon">
+            <img src="./img/file.svg" alt="" />
+          </i>
+          <h1 class="title">ファイル管理</h1>
+        </div>
+      </div>
+
+      <div class="model-warpper">
+
+        <div class="model-section">
+          <h2 class="sub-title">ファイルアップロード</h2>
+
+          <div class="file-upload">
+            <div class="upload-area">
+              <div class="upload-infomation">
+                <div class="file-name">
+                  <i class="ico-folder"><img src="./img/folder.svg" alt="" /></i>
+                  学習データ
+                </div>
+                <div class="file-size">5.7MB</div>
+              </div>
+              <div class="progress progress-moved">
+                <div class="progress-bar">
+                </div>
+              </div>
+              <div class="upload-cancel">
+                <i class="ico-close"><img src="./img/close.svg" alt="" /></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <h2 class="sub-title">ファイル一覧</h2>
+
+          <button class="btn-trash">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.33335 2.90909H2.87935L2.86877 2.90902L2.85819 2.90909H1.40002C0.995012 2.90909 0.666687 3.2347 0.666687 3.63636C0.666687 4.03803 0.995012 4.36364 1.40002 4.36364H2.13544V13.8181C2.13544 15.0231 3.12041 15.9999 4.33544 15.9999H11.6688C12.8838 15.9999 13.8688 15.0231 13.8688 13.8181V4.36364H14.6C15.005 4.36364 15.3334 4.03803 15.3334 3.63636C15.3334 3.2347 15.005 2.90909 14.6 2.90909H13.146L13.1354 2.90902L13.1249 2.90909H11.6667V2.18182C11.6667 0.976833 10.6817 0 9.46669 0H6.53335C5.31833 0 4.33335 0.976833 4.33335 2.18182V2.90909ZM5.80002 2.90909H10.2V2.18182C10.2 1.78016 9.8717 1.45455 9.46669 1.45455H6.53335C6.12835 1.45455 5.80002 1.78016 5.80002 2.18182V2.90909ZM10.9334 4.36364H5.06669H3.6021V13.8181C3.6021 14.2198 3.93043 14.5454 4.33544 14.5454H11.6688C12.0738 14.5454 12.4021 14.2198 12.4021 13.8181V4.36364H10.9334ZM5.7995 7.27268V11.6363C5.7995 12.038 6.12782 12.3636 6.53283 12.3636C6.93784 12.3636 7.26617 12.038 7.26617 11.6363V7.27268C7.26617 6.87102 6.93784 6.54541 6.53283 6.54541C6.12782 6.54541 5.7995 6.87102 5.7995 7.27268ZM8.7344 11.6363V7.27268C8.7344 6.87102 9.06272 6.54541 9.46773 6.54541C9.87274 6.54541 10.2011 6.87102 10.2011 7.27268V11.6363C10.2011 12.038 9.87274 12.3636 9.46773 12.3636C9.06272 12.3636 8.7344 12.038 8.7344 11.6363Z"
+                fill="#B9C5E7" />
+            </svg>
+            選択ファイル削除
+          </button>
+
+          <table class="file-table mt-20">
+            <thead>
+              <tr class="tr-title">
+                <th class="th-check">選択</th>
+                <th class="th-file">ファイル</th>
+                <th class="th-data">データ形式</th>
+                <th class="th-capacity">容量</th>
+                <th class="th-update">アップロード日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 1. pdf -->
+              <tr class="tr-files">
+                <td class="td-check">
+                  <label for="check1" class="custom_checkbox">
+                    <input type="checkbox" id="check1" />
+                    <span class="on"></span>
+                  </label>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="pdf">
+                      <img src="./img/pdf.svg" alt="" />
+                    </i>
+                    name.pdf
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+              <!-- ++++++++++++サブパスがあるとき、開く親++++++++++++　-->
+              <!-- 2. folder -->
+              <tr class="tr-files hasFolder open-folder">
+                <td class="td-check">
+                  <label for="sub" class="custom_checkbox">
+                    <input type="checkbox" id="sub" />
+                    <span class="on"></span>
+                  </label>
+                  <!-- アイコン追加　-->
+                  <button class="chevron-down">
+                    <img src="img/chevron-down.svg" alt="" />
+                  </button>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="folder">
+                      <img src="./img/folder.svg" alt="" />
+                    </i>
+                    faq.doc
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+              <!-- ++++++++++++サブパスを開くときの子供++++++++++++　Start-->
+              <!-- 2_1. folder -->
+              <tr class="tr-files firstFolder hasFolder">
+                <td class="td-check">
+                  <label for="sub_1" class="custom_checkbox">
+                    <input type="checkbox" id="sub_1" />
+                    <span class="on"></span>
+                  </label>
+                  <!-- アイコン追加　-->
+                  <button class="chevron-right">
+                    <img src="img/chevron-right.svg" alt="" />
+                  </button>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <img src="./img/lined.svg" alt="" class="lined" />
+                    <i class="folder">
+                      <img src="./img/folder.svg" alt="" />
+                    </i>
+                    first.doc
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+              <!-- 2_2. folder -->
+              <tr class="tr-files firstFolder hasFolder">
+                <td class="td-check">
+                  <label for="sub_2" class="custom_checkbox">
+                    <input type="checkbox" id="sub_2" />
+                    <span class="on"></span>
+                  </label>
+                  <!-- アイコン追加　-->
+                  <button class="chevron-down">
+                    <img src="img/chevron-down.svg" alt="" class="lined" />
+                  </button>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <img src="./img/lined.svg" alt="" />
+                    <i class="folder">
+                      <img src="./img/folder.svg" alt="" />
+                    </i>
+                    second.doc
+                  </div>
+                </td>
+                <td class="td-data">メール</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+              <tr class="tr-files secondFolder">
+                <td class="td-check">
+                  <label for="sub_3" class="custom_checkbox">
+                    <input type="checkbox" id="sub_3" />
+                    <span class="on"></span>
+                  </label>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <img src="./img/lined.svg" alt="" class="lined" />
+                    <i class="folder">
+                      <img src="./img/folder.svg" alt="" />
+                    </i>
+                    third.doc
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+              <tr class="tr-files firstFolder last-border"><!-- 最後のサブパス｀tr｀に｀border-bottom｀を追加 -->
+                <td class="td-check">
+                  <label for="sub_4" class="custom_checkbox">
+                    <input type="checkbox" id="sub_4" />
+                    <span class="on"></span>
+                  </label>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <img src="./img/lined.svg" alt="" class="lined" />
+                    <i class="folder">
+                      <img src="./img/folder.svg" alt="" />
+                    </i>
+                    third.doc
+                  </div>
+                </td>
+                <td class="td-data">メール</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+              <!-- ++++++++++++サブパスを開くときの子供++++++++++++　End -->
+
+              <!-- 3. xls -->
+              <tr class="tr-files">
+                <td class="td-check">
+                  <label for="check2" class="custom_checkbox">
+                    <input type="checkbox" id="check2" />
+                    <span class="on"></span>
+                  </label>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="xls">
+                      <img src="./img/xls.svg" alt="" />
+                    </i>
+                    sample.xls
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+              <!-- 4. doc-->
+              <tr class="tr-files">
+                <td class="td-check">
+                  <label for="check3" class="custom_checkbox">
+                    <input type="checkbox" id="check3" />
+                    <span class="on"></span>
+                  </label>
+                </td>
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="doc">
+                      <img src="./img/doc.svg" alt="" />
+                    </i>
+                    faq.doc
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/profile_pulldown.js"></script>
+</body>
+
+</html>

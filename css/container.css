@@ -1,0 +1,215 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: calc(100% - 70px);
+}
+
+.container-warpper {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-header {
+  display: flex;
+  width: 100%;
+  padding: 12rem 0 2rem;
+  justify-content: space-between;
+}
+
+.container-header .title-area {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-header .title-area .title-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-header .title-area .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 100%;
+  color: #37303F;
+}
+
+.container-contents {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex: 1 1 0%;
+}
+
+.container-contents .list-warpper {
+  padding: 4rem 0 0 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page {
+  inset: 0;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+}
+
+.page-container .page-warpper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-container .page-warpper .side-bg {
+  max-width: 260px;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: left 0.5 ease 0s;
+  background-color: #fff;
+  border-right: 1px solid #DAE0EF;
+}
+
+.page-container .page-warpper .side-bg .side-menu {
+  padding: 70px 0 0 0;
+  width: 100%;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.page-container .page-warpper .side-bg .side-menu__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #37303F;
+  padding-left: 60px;
+  padding-bottom: 40px;
+}
+
+.page-container .page-warpper .side-bg .side-menu__item {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.page-container .page-warpper .side-bg .side-menu__item .nav {
+  height: 48px;
+  padding: 16px 16px 16px 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.page-container .page-warpper .side-bg .side-menu__item .nav:hover, .page-container .page-warpper .side-bg .side-menu__item .nav:active, .page-container .page-warpper .side-bg .side-menu__item .nav.active {
+  color: #4263EB;
+}
+
+.page-container .page-warpper .view-contents {
+  width: 100%;
+  height: 100%;
+  padding-left: 260px;
+  transition: padding-left 0.5 ease 0s;
+}
+
+.page-container .page-warpper .view-contents .view-bg {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.page-container .page-warpper .view-contents .view-bg .view-layout {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.page-container .page-warpper .view-contents .view-bg .view-layout .view-header {
+  display: flex;
+  width: 100%;
+  padding: 12rem 0 2rem;
+  justify-content: space-between;
+}
+
+.page-container .page-warpper .view-contents .view-bg .view-layout .view-header .title-area {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-container .page-warpper .view-contents .view-bg .view-layout .view-header .title-area .title-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.page-container .page-warpper .view-contents .view-bg .view-layout .view-header .title-area .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 100%;
+  color: #37303F;
+}
+
+.line {
+  background-color: rgba(66, 99, 235, 0.2);
+  width: 100%;
+  height: 1px;
+  margin: 4rem 0;
+}
+
+.line__auto {
+  background-color: rgba(66, 99, 235, 0.2);
+  width: 100%;
+  height: 1px;
+  margin: 2rem 0;
+}
+
+.line__dot {
+  width: 100%;
+  margin: 2rem 0;
+  border-bottom: 1px dotted rgba(66, 99, 235, 0.2);
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-area .img100 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.info-area .explanation {
+  font-size: 1.2rem;
+  color: #7A8499;
+}
+
+.empty-image {
+  margin-top: 100px;
+  width: 100%;
+}

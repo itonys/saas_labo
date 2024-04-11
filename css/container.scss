@@ -1,0 +1,222 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: calc(100% - 70px);
+
+  &-warpper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-header {
+    display: flex;
+    width: 100%;
+    padding: 12rem 0 2rem;
+    justify-content: space-between;
+
+    .title-area {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .title-icon {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 100%;
+        color: #37303F;
+      }
+    }
+  }
+
+  &-contents {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex: 1 1 0%;
+
+    .list-warpper {
+      padding: 4rem 0 0 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.page {
+  inset: 0;
+
+  &-container {
+    width: 100%;
+    height: 100%;
+
+    .page-warpper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      .side-bg {
+        max-width: 260px;
+        width: 100%;
+        height: 100%;
+        padding-top: 60px;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        transition: left 0.5 ease 0s;
+        background-color: #fff;
+        border-right: 1px solid #DAE0EF;
+
+        .side-menu {
+          padding: 70px 0 0 0;
+          width: 100%;
+          overflow: hidden;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          &__title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #37303F;
+            padding-left: 60px;
+            padding-bottom: 40px;
+          }
+
+          &__item {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #495057;
+
+            .nav {
+              height: 48px;
+              padding: 16px 16px 16px 20px;
+              width: 100%;
+              cursor: pointer;
+
+              &:hover,
+              &:active,
+              &.active {
+                color: #4263EB;
+              }
+            }
+          }
+        }
+      }
+
+      .view-contents {
+        width: 100%;
+        height: 100%;
+        padding-left: 260px;
+        transition: padding-left 0.5 ease 0s;
+
+        .view-bg {
+          width: 100%;
+          height: 100%;
+          padding: 0 20px;
+          overflow: hidden;
+
+          .view-layout {
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+
+            .view-header {
+              display: flex;
+              width: 100%;
+              padding: 12rem 0 2rem;
+              justify-content: space-between;
+
+              .title-area {
+                height: 48px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .title-icon {
+                  img {
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+
+                .title {
+                  font-weight: 600;
+                  font-size: 1.8rem;
+                  line-height: 100%;
+                  color: #37303F;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.line {
+  background-color: rgba(66, 99, 235, 0.2);
+  width: 100%;
+  height: 1px;
+  margin: 4rem 0;
+
+  &__auto {
+    background-color: rgba(66, 99, 235, 0.2);
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+  }
+
+  &__dot {
+    width: 100%;
+    margin: 2rem 0;
+    border-bottom: 1px dotted rgba(66, 99, 235, 0.2);
+  }
+}
+
+.info-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+
+  .img100 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .explanation {
+    font-size: 1.2rem;
+    color: #7A8499;
+  }
+}
+
+.empty-image {
+  margin-top: 100px;
+  width: 100%;
+}

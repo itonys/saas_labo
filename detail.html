@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- common css -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/set.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/container.css" />
+  <link rel="stylesheet" href="css/table.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- page css-->
+  <link rel="stylesheet" href="css/model.css" />
+  <link rel="stylesheet" href="css/file.css" />
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/api.css" />
+  <link rel="stylesheet" href="css/mypage.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1>
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="" /></a>
+      </h1>
+      <nav>
+        <ul class="nav">
+          <li class="active"><a href="list.html">AI管理</a></li>
+          <li><a href="file.html">ファイル</a></li>
+          <li><a href="demo_empty.html">デモ</a></li>
+          <li><a href="api.html">API</a></li>
+          <li><a href="report.html">レポート</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <div class="profile">
+        <div class="profile-icon">
+          <p class="profile-icon__alphabet">t</p>
+        </div>
+        <div class="profile-id">
+          <p class="profile-id__name">Tony Jung</p>
+          <div class="profile-id__icon">
+            <i class="icon-down">
+              <img src="./img/chevron-down.svg" alt="" />
+            </i>
+          </div>
+        </div>
+      </div>
+      <!--  profile pulldown : display:none -->
+      <div class="acount">
+        <ul class="pulldown">
+          <li class="pulldown-list" onclick="location.href='./mypage.html'">
+            <span class="pulldown-text">アカウント</span>
+          </li>
+          <li class="pulldown-list" onclick="location.href='./price.html'">
+            <span class="pulldown-text">料金</span>
+          </li>
+          <li class="pulldown-list" onclick="location.href='./history.html'">
+            <span class="pulldown-text">購入履歴</span>
+          </li>
+          <li class="pulldown-line"></li>
+          <li class="pulldown-list" onclick="location.href='./login.html'">
+            <span class="pulldown-text">ロウアウト</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="container-warpper">
+
+      <div class="container-header">
+        <div class="title-area">
+          <i class="title-icon">
+            <img src="./img/ai.svg" alt="" />
+          </i>
+          <h1 class="title">モデル詳細</h1>
+        </div>
+      </div>
+
+      <div class="model-warpper">
+        <div class="model-detail">
+          <div class="details">
+
+            <div class="detail-check">
+              <div class="detail-list">
+                <div class="detail-label">モデル名</div>
+                <div class="detail-textfiled">
+                  <input placeholder="モデル名を入力してください" maxlength="36" class="ghost-input" value="モデル０１" />
+                  <button class="btn-outline btn-save">更新</button>
+                </div>
+              </div>
+              <div class="detail-list">
+                <div class="detail-label">AIモデル</div>
+                <div class="detail-info">GPT2</div>
+              </div>
+              <div class="detail-list">
+                <div class="detail-label">AIモデル</div>
+                <div class="detail-info">2023.05.12　午前11:01</div>
+              </div>
+              <div class="detail-list">
+                <div class="detail-label">ステータス</div>
+                <div class="detail-info">非アクティブ</div>
+              </div>
+              <div class="detail-list">
+                <div class="detail-label">デプロイ</div>
+                <button class="btn-outline btn-auto hover-bright" id="setDeploy">設定</button>
+              </div>
+            </div>
+
+            <div class="deploy-image">
+              <div class="info-area">
+                <img src="./img/deploy.svg" class="img100" alt="" />
+                <p class="explanation">デプロイが必要です。</p>
+              </div>
+            </div>
+
+            <!-- hidden area : 設定ボタンを押したら出てくる display:none -->
+            <div class="detail-deploy">
+              <div class="deploy-layout">
+                <h2 class="deploy-head">デプロイ設定</h2>
+                <h3 class="deploy-title">コスト情報</h3>
+
+                <table class="price-table">
+                  <thead>
+                    <tr class="tr-title__price">
+                      <th class="th-category">項目</th>
+                      <th class="th-cost">コスト（円）</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="tr-cost">
+                      <td class="td-category">GPT3(davinci)（リクエストコスト）</td>
+                      <td class="td-cost">3円/Token</td>
+                    </tr>
+                    <tr class="tr-cost">
+                      <td class="td-category">学習コスト</td>
+                      <td class="td-cost">●●チケット</td>
+                    </tr>
+                    <tr class="tr-cost">
+                      <td class="td-category">レンタルサービス</td>
+                      <td class="td-cost">●●チケット</td>
+                    </tr>
+                    <tr class="tr-cost">
+                      <td class="td-category">消費税（10%）</td>
+                      <td class="td-cost">●●チケット</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="totals deploy-modal">
+                  <div class="total">
+                    <div class="helper">
+                      <img src="./img/help.svg" alt="" />
+                      <span class="helper-tooltip">サービス学習によって多少予想トータル金額は変わります。</span>
+                    </div>
+                    予想額（月間）：<span class="price">●●チケット</span>
+                    <p class="vat">VAT（10%） 含む</p>
+                  </div>
+                </div>
+
+                <div class="deploy-sumit">
+                  <button class="btn-outline basic-btn">キャンセル</button>
+                  <button class="btn-primary basic-btn">デプロイ</button>
+                </div>
+              </div>
+            </div><!-- end .detail-deploy  -->
+          </div>
+
+          <div class="line"></div>
+
+          <h2 class="sub-title">ファイル一覧</h2>
+
+          <table class="file-table">
+            <thead>
+              <tr class="tr-title">
+                <th class="th-file">ファイル</th>
+                <th class="th-data">データ形式</th>
+                <th class="th-capacity">容量</th>
+                <th class="th-update">アップロード日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 1. pdf -->
+              <tr class="tr-files">
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="pdf">
+                      <img src="./img/pdf.svg" alt="" />
+                    </i>
+                    name.pdf
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+              <!-- 2. xls -->
+              <tr class="tr-files">
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="xls">
+                      <img src="./img/xls.svg" alt="" />
+                    </i>
+                    sample.xls
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+              <!-- 3. doc-->
+              <tr class="tr-files">
+                <td class="td-file">
+                  <div class="filetype">
+                    <i class="doc">
+                      <img src="./img/doc.svg" alt="" />
+                    </i>
+                    faq.doc
+                  </div>
+                </td>
+                <td class="td-data">チャット</td>
+                <td class="td-capacity">7MB</td>
+                <td class="td-update">2023.09.05 午後15:30</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/deploy_dialog.js"></script>
+  <script src="js/profile_pulldown.js"></script>
+</body>
+
+</html>

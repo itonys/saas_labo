@@ -1,0 +1,249 @@
+.sign-screen {
+  height: 100vh;
+}
+
+.sign-screen .sign-layout {
+  display: -ms-grid;
+  display: grid;
+  overflow: auto;
+  -ms-grid-columns: 1fr minmax(540px, 50%);
+      grid-template-columns: 1fr minmax(540px, 50%);
+  height: 100%;
+}
+
+.sign-screen .sign-layout .sign-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/sign-bg.svg) #e1e7fe;
+  background-size: 100% 100%;
+  background-position: 50px -100px;
+  background-repeat: no-repeat;
+}
+
+.sign-screen .sign-layout .sign-left .sign-bg {
+  -webkit-animation: zoomInDown 1s ease-in;
+          animation: zoomInDown 1s ease-in;
+}
+
+.sign-screen .sign-layout .sign-left .sign-bg .maps {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
+}
+
+.sign-screen .sign-layout .sign-left .karakrui-logo {
+  position: fixed;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-screen .sign-layout .sign-left .karakrui-logo img {
+  width: 124px;
+  height: 14px;
+}
+
+.sign-screen .sign-layout .sign-right {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.sign-screen .sign-layout .sign-right .logo {
+  margin-bottom: 4rem;
+}
+
+.sign-screen .sign-layout .sign-right .sign-title {
+  font-size: 1.4rem;
+  color: #37303F;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner {
+  width: 100%;
+  max-width: 360px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-mail .sign-filed {
+  background-color: #fff;
+  border: 1px solid #B9C5E7;
+  font-size: 1.4rem;
+  color: #37303F;
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-mail .sign-filed:focus, .sign-screen .sign-layout .sign-right .sign-inner .sign-mail .sign-filed:active {
+  outline: 1px solid #4263EB;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-mail .error {
+  color: #D3213F;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .policy .custom_checkbox {
+  padding-left: 30px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .policy .on {
+  top: 5px !important;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .policy__text {
+  font-size: 1.2rem;
+  color: #37303F;
+  font-weight: 400;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .policy__text a {
+  color: #4263EB;
+  font-weight: 400;
+  text-decoration: underline;
+  padding: 0 2px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .sign-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  color: #37303F;
+  font-size: 1.3rem;
+  gap: 10px;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .sign-link a {
+  color: #4263EB;
+  font-weight: 600;
+}
+
+.sign-screen .sign-layout .sign-right .sign-inner .sign-other .sign-link a:hover {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translateY(-1000px);
+            transform: scale(0.1) translateY(-1000px);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(0.3) translateY(30px);
+            transform: scale(0.3) translateY(30px);
+  }
+  80% {
+    -webkit-transform: scale(1.2) translateY(-10px);
+            transform: scale(1.2) translateY(-10px);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translateY(-1000px);
+            transform: scale(0.1) translateY(-1000px);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(0.3) translateY(30px);
+            transform: scale(0.3) translateY(30px);
+  }
+  80% {
+    -webkit-transform: scale(1.2) translateY(-10px);
+            transform: scale(1.2) translateY(-10px);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+}
